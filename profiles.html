@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    <title>Profiles</title>
+</head>
+<body>
+        <header>
+                <div class="logo">
+                    <a href="index.html"><img src="logo.png" alt="Logo" ></a>
+                </div>
+                <div class="title">
+                    <h1>Rent-A-Friend</h1>
+                </div>
+        </header>
+        
+        <div class="navbar">
+                <a href="index.html">Home</a>
+                <a href="FAQ.html">FAQ</a>
+                <a href="match.html">Find Match</a>
+                <a href="profiles.html">Profiles</a>
+                <a href="reviews.html">Reviews</a>
+                <a href="terms.html">Terms</a>
+        </div>
 
+        <h2>Meet Your New Best Friend!</h2>
+
+        <div id="Belle"></div>
+        <div id="Jace"></div>
+        <div id="Jordan"></div>
+        <div id="MG"></div>
+
+    <script language="javascript">
+
+        // TODO: Figure out new line stuff
+        Belle = {
+            name: "Belle<br>",
+            bio: "Are you looking for someone to show off at a karaoke? A person that will listen to your tangents and specific interests and even ask questions about it? I am your perfect Rent-a-Friend. I am a trained opera singer, retired theater kid and maybe even a k-pop stan. I know a little bit too much about Disney, Barbie and DC animations. I was chronically online during highschool and I will listen and criticize your ‘hot’ takes. I will laugh at your bad jokes and give you a bad joke in return. I am the perfect person if you want a continuous conversation with no awkward silence or silence at all. I also specialized in awkward, morbid, jokes while in a museum. I speak Portuguese, English and Spanish. I’ve been to Brazil, Portugal and New Jersey. My favorite thing to do is walk around any place and talk, sing, listen to music, go to restaurants to eat and talk, or watch shows: broadway shows, movies, or stand-up comedy (this is the only time when I might not talk).<br>",
+            price: "$15 *price might go up with add ons (different language, singing knowledge, or need for emotional soothing).<br>",
+        
+            display: function() {
+                document.getElementById('Belle').innerHTML = this.name + this.bio + this.price;
+            }
+        };
+
+        Jace = {
+            name: "Jace<br>",
+            bio: "Oh, brace yourselves for the sheer thrill of my existence! I'm your go-to Rent-a-Friend superstar, a true connoisseur of life's most exhilarating activities. I've mastered the art of swimming – not the Olympic kind, but more of a casual, 'I won't drown in a kiddie pool' expertise. When I'm not breaking records in the world of aquatic mediocrity, catch me with my nose buried in a book. I don't just read; I devour literature like it's my job... which it's not, because who needs a job when you can be a professional bookworm? And let's not forget my undying love for boba – because what's life without a side of tapioca pearls? I don't just sip on that sweet nectar; I embrace it as if each bubble holds the secrets of the universe.So, if you're seeking a friend who can half-swim, pretend to be intellectual, and passionately discuss the nuances of bubble tea, look no further. I'm the epitome of mediocrity, with a splash of charm and a dash of sarcasm – the friend you never knew you desperately needed.<br>",
+            price: "$728/hour<br>",
+            display: function() {
+                document.getElementById('Jace').innerHTML = this.name + this.bio + this.price;
+
+            }
+        };
+
+        Jordan = {
+            name: "Jordan<br>",
+            bio: "",
+            price: "",
+            display: function() {
+                document.getElementById('Jordan').innerHTML = this.name;
+            }
+        };        
+        
+        MG = {
+            name: "MG",
+            bio: "",
+            price: "",
+            display: function() {
+                document.getElementById('MG').innerHTML = this.name;
+            }
+        };
+        
+        window.onload = function()
+        {
+                Belle.display();
+                Jace.display();
+
+        }
+    </script>
+
+</body>
+</html>
