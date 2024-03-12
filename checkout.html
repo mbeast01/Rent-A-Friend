@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Checkout</title>
+        <title>Rent-A-Friend | Checkout</title>
 </head>
 <body>
     <header>
@@ -14,7 +14,8 @@
         <div class="title">
             <h1>Rent-A-Friend</h1>
         </div>
-</header>
+    </header>
+        
     <div class="navbar">
         <a href="index.html">Home</a>
         <a href="FAQ.html">FAQ</a>
@@ -24,6 +25,56 @@
         <a href="terms.html">Terms</a>
       </div>
 
+      <h2>Check out now!</h2>  
+
+      <p>Ready to get started? Fill out the contact information, with your desired dates and choice of friend. One of our representatives will reach out to you within 1-2 business days.</p> 
+      <form>
+        <label for="name">Name: </label>      
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email: </label>      
+        <input type="text" id="email" name="email" required>
+
+        <label for="card">Card number: </label>      
+        <input type="text" id="card" name="card" required>   
+        
+        <label for="expiration">Expiration date: </label>
+        <p>Month: </p>
+        <select id="expiration" name="expiration" size="12">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+        </select>
+        <p>Year: </p>
+              
+        <label for="date">Desired date: </label>      
+        <input type="date" id="date" name="date">
+
+        <label for="friend">Choose your friend: </label>
+        <select id="friend" name="friend" size="4">
+                <option value="Belle">Belle</option>
+                <option value="Jace">Jace</option>
+                <option value="Jordan">Jordan</option>
+                <option value="MG">MG</option>
+        </select>
+
+        <a href="https://mbeast01.github.io/Rent-A-Friend/terms.html">Read our terms and conditions here.</a> 
+        <label for="terms">I have read and agree to the terms and conditions.</label>
+        <input type="checkbox" id="terms" name="terms"> // got rid of value
+      
+        <input type="submit" value="Check out"/>
+      </form>  
+  
+        
 </body>
 </html>
 
