@@ -31,15 +31,15 @@
       <form>
         <label for="name">Name:</label>      
         <input type="text" id="name" name="name" required>
-        </br>
+        </br></br>
 
         <label for="email">Email:</label>      
         <input type="text" id="email" name="email" required>
-        </br>
+        </br></br>
 
         <label for="card">Card number:</label>      
         <input type="text" id="card" name="card" required>   
-        </br>
+        </br></br>
         
         <label for="expiration">Expiration date:</label>
         <p style="display:inline">Month: </p>
@@ -57,13 +57,31 @@
                 <option value="11">11</option>
                 <option value="12">12</option>
         </select>
-        <p>Year: </p>
-        
-        </br>        
+        <p style="display:inline">Year: </p>
+        <input type="number" min="2024" max="2099" step="1" value="2024"/>
+<!--         <select id="expiration" name="expiration">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>           
+        </select>         -->
+        </br></br>        
         <label for="date">Desired date: </label>      
         <input type="date" id="date" name="date">
-
-        </br>
+        </br></br>
+              
+        <label for="time">Choose a time for your meeting:</label>
+        <input type="time" id="time" name="time" min="06:00" max="24:00" required />
+        </br></br>
+              
         <label for="friend">Choose your friend: </label>
         <select id="friend" name="friend">
                 <option value="Belle">Belle</option>
