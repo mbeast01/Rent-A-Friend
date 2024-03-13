@@ -15,7 +15,7 @@
                 var name = document.getElementById("name").value;
                 var email = document.getElementById("email").value;
                 var card = document.getElementById("card").value;
-                var terms = document.getElementById("terms").value;
+                var terms = document.getElementById("terms").checked;
 
                 if (name == "") {
                     alert("Name must be filled out");
@@ -37,7 +37,7 @@
                 } else if (isNaN(parseInt(card))) {
                     alert("Card number must be all numbers");
                     return false;
-                } if (!terms.checked) {
+                } if (!terms) {
                     alert("Must agree to terms and conditions");
                     return false;
                 } 
@@ -121,7 +121,7 @@
                 </br></br>
                       
                 <label for="terms">I have read and agree to the terms and conditions.</label>
-                <input type="checkbox" id="terms" name="terms" required>
+                <input type="checkbox" id="terms" name="terms">
                 </br></br>
                       
                 <div class="button>
