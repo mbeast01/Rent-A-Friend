@@ -23,6 +23,9 @@
                 if (email == "") {
                     alert("Email must be filled out");
                     return false;
+                } else if (!email.includes("@")){
+                    alert("Invalid email");
+                    return false;          
                 }
                 if (card == "") {
                     alert("Card number must be filled out");
@@ -60,15 +63,15 @@
               <p>Ready to get started? Fill out the contact information, with your desired date and choice of friend. One of our representatives will reach out to you within 1-2 business days.</p> 
               <form>
                 <label for="name">Name:</label>      
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name">
                 </br></br>
         
                 <label for="email">Email:</label>      
-                <input type="text" id="email" name="email" required>
+                <input type="text" id="email" name="email">
                 </br></br>
         
                 <label for="card">Card number:</label>      
-                <input type="text" id="card" name="card" required>   
+                <input type="text" id="card" name="card">   
                 </br></br>
                 
                 <label for="expiration">Expiration date:</label>
