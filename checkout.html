@@ -10,6 +10,31 @@
                 margin: 5vw;    
             }
         </style>
+        <script>
+            function validate() {
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var card = document.getElementById("card").value;
+
+                if (name == "") {
+                    alert("Name must be filled out");
+                    return false;
+                }
+                if (email == "") {
+                    alert("Email must be filled out");
+                    return false;
+                }
+                if (card == "") {
+                    alert("Card number must be filled out");
+                    return false;
+                } else if (card.length < 16) {
+                    alert("Card number must be at least 16 numbers");
+                    return false;
+                }
+                
+                window.location.href = "https://w3schools.invisionzone.com/topic/62282-how-to-windowlocationhref-target_blank/";
+            }
+        </script>
 </head>
 <body>
     <header>
@@ -90,10 +115,9 @@
                 </br></br>
                       
                 <div class="button>
-
-                        <form action="#" method="post">
-                                <input type="submit" value="Check out"/>
-                        </form> 
+                    <form method="post" action="#">
+                            <input type="button" value="Check out" onclick="validate()">
+                    </form> 
                 </div>
         </body>
 </html>
