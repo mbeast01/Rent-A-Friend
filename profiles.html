@@ -10,25 +10,27 @@
             max-width: 30%;
             max-height: 30%;
         }
+        div.rows {
+            margin: 10%;
+        }
         div.row1 {
           display: inline-block;
-          text-align: center;
+          text-align: right;
         }
         div.row2 {
           display: inline-block;
-          text-align: center;
-        }
-        div.row1 {
-          display: inline-block;
-          text-align: center;
+          text-align: right;
         }        
         div.row3 {
           display: inline-block;
-          text-align: center;
+          text-align: right;
         }
         div.row4 {
           display: inline-block;
-          text-align: center;
+          text-align: right;
+        }
+        div.button {
+            margin: 10%;
         }
 
     </style>
@@ -54,48 +56,39 @@
         </div>
 
         <h2>Meet Your New Best Friend!</h2>
-
-<div class="row1">
-    <div class="pic">
-      <img src="Isabelle_bio_pic.png" alt="Isabelle_bio_pic">
-    </div>
-    <div id="Belle">
-    </div>
-</div>
-
-<div class="row2">
-    <div class="pic">
-      <img src="Jace_bio_pic.jpg" alt="Jace_bio_pic">
-    </div>
-    <div id="Jace">
-    </div>
-</div>
-
-<div class="row3">
-    <div class="pic">
-      <img src="Jordan_bio_pic.JPG" alt="Jordan_bio_pic">
-    </div>
-    <div id="Jordan">
-    </div>
-</div>
-
-<div class="row4">
-    <div class="pic">
-      <img src="Mg_bio_pic.JPG" alt="Jordan_bio_pic">
-    </div>
-    <div id="Mg">
-    </div>
-</div>
-        
-
-<!--         <img src="Jace_bio_pic.jpg" alt="Jace_bio_pic">
-        <div id="Jace"></div>
-
-        <img src="Jordan_bio_pic.JPG" alt="Jordan_bio_pic">
-        <div id="Jordan"></div>
-
-        <img src="Mg_bio_pic.JPG" alt="Mg_bio_pic">
-        <div id="MG"></div> -->
+        <div class="rows">
+            <div class="row1">
+                <div class="pic">
+                  <img src="Isabelle_bio_pic.png" alt="Isabelle_bio_pic">
+                </div>
+                <div id="Belle">
+                </div>
+            </div>
+            
+            <div class="row2">
+                <div class="pic">
+                  <img src="Jace_bio_pic.jpg" alt="Jace_bio_pic">
+                </div>
+                <div id="Jace">
+                </div>
+            </div>
+            
+            <div class="row3">
+                <div class="pic">
+                  <img src="Jordan_bio_pic.JPG" alt="Jordan_bio_pic">
+                </div>
+                <div id="Jordan">
+                </div>
+            </div>
+            
+            <div class="row4">
+                <div class="pic">
+                  <img src="Mg_bio_pic.JPG" alt="Jordan_bio_pic">
+                </div>
+                <div id="Mg">
+                </div>
+            </div>
+        </div>
     
     <script language="javascript">   
         Belle = {
@@ -132,7 +125,7 @@
             bio: "Step into MG’  enigmatic realm, where mystery and mischief intertwine for unforgettable adventures! If you are seeking companions for whimsical escapades filled with laughter, spontaneity, and a touch of the unexpected, join me! Together we will unravel cryptic clues in escape rooms, orchestrate pranks, indulge in small acts of vandalism, and explore hidden corners of the city where secrets lurk. Together, we'll defy the mundane and embrace the chaos, making every moment count in our quest for thrills. Are you ready to unlock the secrets of friendship and embark on an odyssey of whimsy? If so, let's rendezvous and ignite the spark of camaraderie amidst the shadows of uncertainty. Adventure awaits, dear seeker, and I am your guide to the realm of endless possibilities.<br><br>",
             price: "Negotiable",
             display: function() { 
-                document.getElementById('MG').innerHTML = this.name + this.bio + this.price;;
+                document.getElementById('Mg').innerHTML = this.name + this.bio + this.price;;
             }
         };
         
@@ -145,9 +138,11 @@
 
         }
     </script>
-    <form action="https://mbeast01.github.io/Rent-A-Friend/checkout.html">
-        <input type="submit" value="Rent now!"/>
-    </form>
+    <div class="button">
+        <form action="https://mbeast01.github.io/Rent-A-Friend/checkout.html">
+            <input type="submit" value="Rent now!"/>
+        </form>
+    </div>
 
 </body>
 </html>
