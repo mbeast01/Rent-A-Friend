@@ -15,6 +15,7 @@
                 var name = document.getElementById("name").value;
                 var email = document.getElementById("email").value;
                 var card = document.getElementById("card").value;
+                var terms = document.getElementById("terms").value;
 
                 if (name == "") {
                     alert("Name must be filled out");
@@ -36,7 +37,10 @@
                 } else if (isNaN(parseInt(card))) {
                     alert("Card number must be all numbers");
                     return false;
-                }
+                } if (!terms.checked) {
+                    alert("Must agree to terms and conditions");
+                    return false;
+                } 
                 
                 window.location.href = "https://mbeast01.github.io/Rent-A-Friend/thanks.html";
             }
@@ -79,7 +83,7 @@
                 
                 <label for="expiration">Expiration date:</label>
                 <p style="display:inline">Month: </p>
-                <select id="expiration" name="expiration" required>
+                <select id="expiration" name="expiration" value="1"required>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
@@ -97,11 +101,11 @@
                 <input type="number" min="2024" max="2099" step="1" value="2024" required/>
                 </br></br>        
                 <label for="date">Desired date: </label>      
-                <input type="date" id="date" name="date">
+                <input type="date" id="date" name="date" value=""2024-03-13"">
                 </br></br>
                       
                 <label for="time">Choose a time for your meeting:</label>
-                <input type="time" id="time" name="time" required />
+                <input type="time" id="time" name="time" value="00:00" required/>
                 </br></br>
                       
                 <label for="friend">Choose your friend: </label>
