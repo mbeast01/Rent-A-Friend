@@ -33,9 +33,12 @@
                 } else if (card.length < 16) {
                     alert("Card number must be at least 16 numbers");
                     return false;
+                } else if (!isNaN(card)) {
+                    alert("Card number must be all numbers");
+                    return false;
                 }
                 
-                window.location.href = "https://w3schools.invisionzone.com/topic/62282-how-to-windowlocationhref-target_blank/";
+                window.location.href = "https://mbeast01.github.io/Rent-A-Friend/thanks.html";
             }
         </script>
 </head>
