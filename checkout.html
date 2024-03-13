@@ -29,18 +29,21 @@
 
       <p>Ready to get started? Fill out the contact information, with your desired dates and choice of friend. One of our representatives will reach out to you within 1-2 business days.</p> 
       <form>
-        <label for="name">Name: </label>      
+        <label for="name">Name:</label>      
         <input type="text" id="name" name="name" required>
+        </br>
 
-        <label for="email">Email: </label>      
+        <label for="email">Email:</label>      
         <input type="text" id="email" name="email" required>
+        </br>
 
-        <label for="card">Card number: </label>      
+        <label for="card">Card number:</label>      
         <input type="text" id="card" name="card" required>   
+        </br>
         
-        <label for="expiration">Expiration date: </label>
-        <p>Month: </p>
-        <select id="expiration" name="expiration" size="12">
+        <label for="expiration">Expiration date:</label>
+        <p style="display:inline">Month: </p>
+        <select id="expiration" name="expiration">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -55,21 +58,23 @@
                 <option value="12">12</option>
         </select>
         <p>Year: </p>
-              
+        
+        </br>        
         <label for="date">Desired date: </label>      
         <input type="date" id="date" name="date">
 
+        </br>
         <label for="friend">Choose your friend: </label>
-        <select id="friend" name="friend" size="4">
+        <select id="friend" name="friend">
                 <option value="Belle">Belle</option>
                 <option value="Jace">Jace</option>
                 <option value="Jordan">Jordan</option>
                 <option value="MG">MG</option>
         </select>
 
-        <a href="https://mbeast01.github.io/Rent-A-Friend/terms.html">Read our terms and conditions here.</a> 
+        <a href="https://mbeast01.github.io/Rent-A-Friend/terms.html" target="_blank">Read our terms and conditions here.</a> 
         <label for="terms">I have read and agree to the terms and conditions.</label>
-        <input type="checkbox" id="terms" name="terms"> // got rid of value
+        <input type="checkbox" id="terms" name="terms" required>
       
         <input type="submit" value="Check out"/>
       </form>  
