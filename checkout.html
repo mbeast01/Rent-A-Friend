@@ -33,7 +33,7 @@
                 } else if (card.length < 16) {
                     alert("Card number must be at least 16 numbers");
                     return false;
-                } else if (!isNaN(card)) {
+                } else if (!isNaN(parseInt(card))) {
                     alert("Card number must be all numbers");
                     return false;
                 }
