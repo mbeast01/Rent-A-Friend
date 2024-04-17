@@ -63,6 +63,13 @@
                 $("#slide img").attr("src","images/"+images[imgIndex]);
                 $("#slide img").fadeIn(2000,slideShow);
             }
+            function instagram {
+            res = fetch('https://api.instagram.com/oauth/authorize') 
+            ?client_id=IGQWRQMjVqWU5IamR4cktlYk1oWXpMc3FMMmp1clkyQWVEdVFWY25LcHZACZAy1mNXVxNXdTZAC14OXE5anlFeDVrMmk0MFRVcXZAxbTBkT0NISE5LY2JlUFVibjBCNmp2TUxtcDJLa0M5UW1kQmZAUa0xZAYTB2SjBNOUkZD
+            &redirect_uri=https://mbeast01.github.io/Rent-A-Friend/index.html
+          &scope=user_profile,user_media
+          &response_type=code
+        }
         </script>
             <div class="row">
                 <div class="column left">
@@ -79,13 +86,6 @@
                         Cheers to the epitome of authentic human interaction!</p>
                 </div>
             </div>
-      function instagram {
-        res = fetch('https://api.instagram.com/oauth/authorize') 
-    ?client_id=IGQWRQMjVqWU5IamR4cktlYk1oWXpMc3FMMmp1clkyQWVEdVFWY25LcHZACZAy1mNXVxNXdTZAC14OXE5anlFeDVrMmk0MFRVcXZAxbTBkT0NISE5LY2JlUFVibjBCNmp2TUxtcDJLa0M5UW1kQmZAUa0xZAYTB2SjBNOUkZD
-    &redirect_uri=https://mbeast01.github.io/Rent-A-Friend/index.html
-      &scope=user_profile,user_media
-      &response_type=code
-        }
         
         <div id='slides-wrapper'>
             <div id='slide'>
